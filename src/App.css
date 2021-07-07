@@ -1,38 +1,64 @@
-.App {
+.Main-Container { 
+  display: flex; 
+  flex-direction: column;
+  background-color: white;
+  margin: 50px;
+  padding: 15px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+  height: max-content;
+}
+
+.Toggle-Row { 
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+}
+
+.Center-Panel-Container { 
+  display: flex; 
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px; 
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Condition-Frame { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Temperature-Frame { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Details-Panel-Container { 
+  display: flex;
+  flex-direction: row;
+  margin: 30;
+  justify-content: center;
+}
+
+.Details-Panel-Column { 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20;
 }
 
-.App-link {
-  color: #61dafb;
+.Details-Text {
+  font-size: 20px;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Location-Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
 }
